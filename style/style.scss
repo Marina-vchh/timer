@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Quicksand', sans-serif;
+}
+
+$backgroundColor: rgb(56, 56, 56);
+$fontColor: #fff;
+$buttonBackground: rgb(34, 34, 34);
+$stopHoverBackgroundColor: rgb(175, 54, 54);
+$saveHoverBackgroundColor: rgb(247, 250, 76);
+$timerItemBackgroundColor: rgb(139, 237, 82);
+
+
+
+button {
+   border: none;
+}
+
+body{
+   background-color: $backgroundColor;
+}
+
+.wrapper{
+   padding: 150px 16px 0 0;
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+}
+.timer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 30px;
+   margin-bottom: 60px;
+   &__item{
+      padding: 70px 0 30px 0;
+      max-width: calc(1200 / 4 - 30px);
+      width: 100%;
+      background-color: $timerItemBackgroundColor;
+      border-radius: 50%;
+   }
+   .time{
+      text-align: center;
+      color: $fontColor;
+      font-size: 80px;
+      margin-bottom: 30px;
+   }
+   .title{
+      color: $fontColor;
+      font-size: 22px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+}
+
+.buttons{
+   padding: 0 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 50px;
+   .button{
+      max-width: 200px;
+      width: 100%;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 22px;
+      color: $fontColor;
+      background-color: $buttonBackground;
+      transition: .5s all linear;
+      &__start:hover, &__pause:hover{
+         background-color: $timerItemBackgroundColor;
+      }
+      &__stop:hover{
+         background-color: $stopHoverBackgroundColor;
+      }
+      &__save:hover{
+         background-color: $saveHoverBackgroundColor;
+      }
+   }
+}
+
+.results{
+   max-width: 300px;
+   width: 100%;
+   margin: 0 auto;
+   &__title{
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 36px;
+      color: $fontColor;
+   }
+   &__save{
+      text-align: center;
+      font-size: 30px;
+      color: $fontColor;
+      margin-bottom: 10px;
+      .counter{
+         color: $timerItemBackgroundColor;
+      }
+   }
+}
+

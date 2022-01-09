@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Timer</title>
+   <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="timer">
+         <div class="timer__item">
+            <div class="time" id="hoursId">00</div>
+            <h2 class="title">hours</h2>
+         </div>
+         <div class="timer__item">
+            <div class="time" id="minutesId">00</div>
+            <h2 class="title">minutes</h2>
+         </div>
+         <div class="timer__item">
+            <div class="time" id="secondsId">00</div>
+            <h2 class="title">seconds</h2>
+         </div>
+         <div class="timer__item">
+            <div class="time" id="millisecondsId">00</div>
+            <h2 class="title">milliseconds</h2>
+         </div>
+      </div>
+         <div class="buttons">
+            <button class="button button__start" id="start">start</button>
+            <button class="button button__pause" id="pause">pause</button>
+            <button class="button button__stop" id="stop">stop</button>
+            <button class="button button__save" id="save">save</button>
+         </div>
+         <div class="results">
+            <h2 class="results__title">results:</h2>
+            <div id="results__bloc"></div>
+         </div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
