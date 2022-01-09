@@ -13,6 +13,12 @@ button {
 
 body {
   background-color: #383838;
+  color: #fff;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .wrapper {
@@ -47,16 +53,12 @@ body {
 
 .timer .time {
   text-align: center;
-  color: #fff;
   font-size: 80px;
   margin-bottom: 30px;
 }
 
 .timer .title {
-  color: #fff;
   font-size: 22px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .buttons {
@@ -95,7 +97,12 @@ body {
 }
 
 .buttons .button__save:hover {
-  background-color: #f7fa4c;
+  background-color: #faaf4c;
+}
+
+.buttons .button__save:disabled {
+  background-color: #333;
+  cursor: not-allowed;
 }
 
 .results {
@@ -105,17 +112,13 @@ body {
 }
 
 .results__title {
-  text-align: center;
-  text-transform: uppercase;
   margin-bottom: 20px;
   font-size: 36px;
-  color: #fff;
 }
 
 .results__save {
   text-align: center;
   font-size: 30px;
-  color: #fff;
   margin-bottom: 10px;
 }
 

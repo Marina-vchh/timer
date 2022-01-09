@@ -11,10 +11,8 @@ $backgroundColor: rgb(56, 56, 56);
 $fontColor: #fff;
 $buttonBackground: rgb(34, 34, 34);
 $stopHoverBackgroundColor: rgb(175, 54, 54);
-$saveHoverBackgroundColor: rgb(247, 250, 76);
+$saveHoverBackgroundColor: rgb(250, 175, 76);
 $timerItemBackgroundColor: rgb(139, 237, 82);
-
-
 
 button {
    border: none;
@@ -22,6 +20,12 @@ button {
 
 body{
    background-color: $backgroundColor;
+   color: $fontColor;
+}
+
+h2{
+   text-transform: uppercase;
+   text-align: center;
 }
 
 .wrapper{
@@ -45,18 +49,13 @@ body{
    }
    .time{
       text-align: center;
-      color: $fontColor;
       font-size: 80px;
       margin-bottom: 30px;
    }
    .title{
-      color: $fontColor;
       font-size: 22px;
-      text-align: center;
-      text-transform: uppercase;
    }
 }
-
 .buttons{
    padding: 0 60px;
    display: flex;
@@ -82,24 +81,23 @@ body{
       &__save:hover{
          background-color: $saveHoverBackgroundColor;
       }
+      &__save:disabled{
+         background-color: #333;
+         cursor: not-allowed;
+      }
    }
 }
-
 .results{
    max-width: 300px;
    width: 100%;
    margin: 0 auto;
    &__title{
-      text-align: center;
-      text-transform: uppercase;
       margin-bottom: 20px;
       font-size: 36px;
-      color: $fontColor;
    }
    &__save{
       text-align: center;
       font-size: 30px;
-      color: $fontColor;
       margin-bottom: 10px;
       .counter{
          color: $timerItemBackgroundColor;
